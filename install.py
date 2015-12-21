@@ -2,6 +2,8 @@ import sys
 import os, os.path
 import shutil
 
+SKYRIM_DIRECTORY = "F:/Games/Skyrim"
+
 def copy_tree(src, dst):
     if not os.path.exists(dst):
         os.makedirs(dst)
@@ -14,14 +16,11 @@ def copy_tree(src, dst):
             if not os.path.exists(d) or os.stat(s).st_mtime - os.stat(d).st_mtime > 1:
                 shutil.copy2(s, d)
 
-def main(skyrim_dir):
+def main():
     for node in os.listdir(os.getcwd()):
         node = os.path.join(os.getcwd(), node)
         if (os.path.isdir(node)):
-            copy_tree(node, skyrim_dir)
+            copy_tree(node, SKYRIM_DIRECTORY)
 
 if (__name__ == "__main__"):
-    if (len(sys.argv) == 3):
-        main(sys.argv[2])
-    else:
-        print("usage:\npython install.py <Skyrim_Directory>")
+    main()
