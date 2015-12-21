@@ -1,0 +1,397 @@
+
+Name: Winter Is Coming - Cloaks
+Version: 2.3
+Category: Clothing 
+Author: Nivea
+
+File: http://skyrim.nexusmods.com/downloads/file.php?id=13486
+
+
+===========   
+Description   
+=========== 
+
+Winter Is Coming - Cloaks adds lore friendly only items into the world through the use of level lists and crafting, this will add more diversity to the game while keeping the "feel" of Skyrim. I was heavily inspired by Viking art and the HBO series Game of Thrones( A Song of Ice and Fire book series), none of the cloaks in the mod however are based on Game of Thrones simply inspired by.
+
+Currently in game:
+
+Bear Claw Cloaks: 9
+Bear Hoods: 9
+Armored Light Bear Hoods: 9
+Armored Heavy Bear Hoods: 9
+
+Wolf Skin Cloaks: 12
+Wolf Skin Hoods: 15
+Armored Light Wolf Skin Hoods: 15
+Armored Heavy Wolf Skin Hoods: 15
+
+All items work with all the races and genders, and can be bought, found or even crafted in game at the tanning rack and armored items can be tempered.
+
+WIC is fully compatible with the mods Frostfall and Hypothermia.
+
+==========   
+Crafting 
+========== 
+
+To craft any of the items in WIC you MUST first have a new item called a Fur Crafting Kit, you can either craft the Fur Crafting Kit at the Tanning Rack or you can try and buy them from a merchant. Without a Fur Crafting Kit NO items will appear in the crafting menu, this is to help cut back on recipe clutter. When you are done crafting your cloaks or hoods, just store the Fur Crafting Kit someplace until your ready to craft more items.
+
+Making a Fur Crafting Kit requires:
+Tanning Rack
+Basket (any) x 1
+Leather x 1
+Leather Strips x 1
+
+=====================   
+FAQ / Troubleshooting  
+=====================
+
+Q: Where do you get the items in game?
+A: If you are using the Main version you can find all cloaks/hoods through out the world on enemy NPC, buy them in stores and craft them at the Tanning Rack.
+A: If you are using the Craft Only version you may only craft them at the Tanning Rack.
+
+Q: My game crashes at the main menu?
+A: Crashes at the main menu normally mean your missing a master, please make sure you have the required version of Skyrim AND that any patches you might be using are correct.
+
+Q: Why is there so much clipping with the cloaks?
+A: Sadly there will always be clipping, I have done my very best to minimize clipping but there is only so much I can do. You will always have clipping with some weapons and items, you can remove most of the feet clipping by using a animation mod that tweaks the movement animations. Check the Suggested Mods section. I will NOT be rigging the cloaks to the feet, I HATE the way it looks and moves so please do NOT ask me to do so.
+
+Q: How long does it take for the cloaks/hoods to show up in game?
+A: About one week waiting will reset all NPC spawns that have already spawned, if you enter a new area that you have not been in before it should work right away.
+ 
+Q: The items seem to show up to often or rarely?
+A: I have tried my best to make all the cloaks and hoods uncommon on hostile NPC but not really rare.
+
+Q: Will all NPCs have a cloak or hood on?
+A. No, there is a small % that certain enemy NPC will have them on. Also guards in the colder holds have a % of wearing cloaks.
+
+Q: Is this mod compatible with Frostfall, Hypothermia and Wet and Cold?
+A: Yes, and you do not need a patch for any of them.
+
+Q: Is this mod compatible with?
+A. If the mod adds items to the same outfit/level lists then it will conflict, nothing game breaking will happen simply which ever mod is lower in the load order will show up on that NPC.
+
+Q: Does this mod add cloaks or Storm cloaks/Imperials?
+A: Not at this time. 
+
+Q: Why are there three crafting recipes of the same cloak?
+A: You installed all the .esp at once, you need to only have ONE main plugin at a time.
+
+Q: What happened to the lorecraft versions?
+A: It was no longer needed since I added the Fur Crafting Kit.
+
+
+============
+Requirements
+============
+
+Skyrim patched to at least 1.9.32.0
+
+
+==========   
+Plugins  
+========== 
+
+-----------------
+Main plugins:
+-----------------
+Please use ONLY ONE.
+
+1nivWICCloaks.esp: This is the main plugin for WIC, it places items through out the game on NPCs, Vendors AND crafting. PLEASE PICK ONE PLUGIN.
+
+1nivWICCloaksCRAFT.esp: This plugin makes the cloaks ONLY craftable, that means you will NOT find them on NPCs or Vendors everything must be crafted at the Tanning Rack. PLEASE PICK ONE PLUGIN.
+
+1nivWICCloaksNoGuards.esp: This plugin is the same as the main plugin, except this one has no guards edited in the mod. They will have NO cloaks or hoods from WIC. PLEASE PICK ONE PLUGIN.
+
+-------------------
+Optional Patches:
+-------------------
+Optional patches require BOTH Winter Is Coming AND the mod they patch to be installed and turned on.
+
+.........................................................................
+Cloaks of Skyrim: http://skyrim.nexusmods.com/downloads/file.php?id=12092
+.........................................................................
+
+You do NOT need a patch if you use the CRAFT only version of WIC.
+Please use ONLY ONE.
+
+1nivWICSkyCloaksPatch.esp: This is a optional patch for the mod Cloaks Of Skyrim, only use if you have Cloaks Of Skyrim mod. This patch edits the level lists and Outfit lists to play nicely with each other, you need this patch even if you make a Bashed patch.			  
+
+1nivWICSkyCloaksPatch-No Imp.esp: This is a optional patch for the mod Cloaks Of Skyrim the No Imperial version, only use if you have Cloaks Of Skyrim No Imperial mod.
+
+1nivWICSkyCloaksPatch-NoGuards.esp: This is a optional patch for the mod Cloaks Of Skyrim, only use if you have Cloaks Of Skyrim mod AND Winter Is Coming No Guards version.
+
+1nivWICSkyCloaksPatch-No ImpGuards.esp: This is a optional patch for the mod Cloaks Of Skyrim the No Imperial version, only use if you have Cloaks Of Skyrim No Imperial mod AND Winter Is Coming No Guards version.
+
+=============   
+Texture Packs  
+============= 
+
+Main Download: Contains textures no larger then 2048 and normal maps at half size. Good for most computers.
+
+Large Pack: Textures max size 4096 with normal maps at full size.
+
+Medium Pack: Textures max size 2048 with normal maps at full size. 
+
+Small Pack: Textures max size 1024 with normal maps at full size.
+
+===================== 
+Highly Suggested mods  
+=====================
+This mod is NOT required, BUT I suggest you get it since it removes most foot clipping with the cloaks.
+
+360 Walk and Run Plus: http://skyrim.nexusmods.com/mods/34508
+
+
+===============  
+Suggested mods   
+===============
+None of these are required, simply mods you may also enjoy.
+
+Matching Set Perk Fix: http://skyrim.nexusmods.com/mods/21129
+
+Frostfall: http://skyrim.nexusmods.com/mods/11163
+
+Hypothermia: http://skyrim.nexusmods.com/mods/6745 
+
+Wet and Cold: http://skyrim.nexusmods.com/mods/27563  
+
+Cloaks of Skyrim: http://skyrim.nexusmods.com/mods/12092
+
+hothtrooper44 mods: http://skyrim.nexusmods.com/users/3656551
+
+Omesean mods: http://skyrim.nexusmods.com/users/1701838
+	
+tumbajamba mods: http://skyrim.nexusmods.com/users/1196961
+
+Natterforme mods: http://skyrim.nexusmods.com/users/2102930
+
+============   
+Installation   
+============ 
+
+PLEASE MAKE SURE YOU READ THE PLUGINS SECTION.
+
+There are two ways to install WIC:
+- Use NMM to install the mod for you.
+- Download and install the mod manually. 
+
+-------------------
+Nexus Mod Manager:
+-------------------
+
+1. Click the 'Download with manager' button on top of the file.
+
+2. WIC can be activated in NMM's mod list when the mod downloaded fully. Double-click on the mod to start the installation.
+
+3. Install the mod.
+
+4. Finished.
+
+5. Install OPTIONAL Texture Pack, this is totally optional you do not need any of the texture packs.
+
+------------------------------
+Texture Pack NMM Installation:
+------------------------------
+
+1. Install the Main File.
+
+2. Download Optional Texture Pack.
+
+3. Install texture pack.
+
+*Important*
+4. Click NO if asked to upgrade.
+
+5. Finished.
+
+-------------------
+Manual Installation:
+-------------------
+
+1. Use 7zip to extract the files. Extract WIC to a random folder, NOT your Data folder.
+
+2. Manually go through and select your .esps and any patches you would like to install, make sure you have read the Plugins section of this readme.
+
+3. Place selected .esp/meshs/textures into your Data folder found in Program Files/Steam/steamapps/common/skyrim/Data/
+
+4. Turn on the .esps in your choice of mod manager, or the Skyrim game data files menu.
+
+5. Download and install any optional patches.
+
+6. Download and install any texture options.
+
+7. Finished.
+
+==============   
+Uninstallation   
+==============
+
+-------------------
+Nexus Mod Manager:
+-------------------
+
+1. Highlight Winter Is Coming mod.
+
+2. Select deactivate selected mod.
+
+3. Finished.
+
+-------------------
+Manual Installation:
+-------------------
+
+1. Delete Texture folder 1nivcloaks.
+
+2. Delete mesh folder 1nivcloaks.
+
+3. Delete:
+ 
+1nivWICCloaks.esp
+1nivWICCloaksCRAFT.esp
+1nivWICSkyCloaksPatch.esp
+1nivWICSkyCloaksPatch-No Imp.esp
+1nivWICCloakslorecraft.esp
+1nivWICCloaksCRAFTlorecraft.esp
+
+4. Finished. 
+ 
+============   
+Known Issues   
+============ 
+
+Clipping with some of the heavy armors, and clipping with feet when running. There is nothing I can do about the feet clipping, I do not want to rig the cloaks to a characters feet. Please do not ask me to do that, or ask me about shorting the longer cloaks this is how I wanted the current cloaks to be.
+
+==========   
+Conflicts
+========== 
+
+This mod makes use of the unused slots 46 (cloaks), 45 (scarves/wraps not yet in game). Any mod that uses those slots will conflict, if this happens please ask (nicely) the mod maker to consider using the Suggested Use of Additional Nodes.
+
+http://www.creationkit.com/Biped_Object
+
+Mods that edit the same level lists and outfits will conflict, which ever mod is in the later slot will win. Nothing major will happen to your game, other then not seeing some of the items show up in game. I HIGHLY suggest (but it is not required) you use Wrye Bash to create a Bash Patch to help make level lists work together.
+
+http://skyrim.nexusmods.com/mods/1840
+
+
+==========   
+Updates  
+==========
+
+2.3:
+
+- Mod now requires patch 1.9.32.0
+- Crafting overhaul added Fur Crafting Kit
+- Changed Bear Claws required from 10 to 2
+- All Lorecraft patches removed
+- Cloaks of Skyrim patches remade
+- Level lists edits for Cloaks of Skyrim patches
+- Level lists edits for vendors
+- Naming overhaul
+- NMM installer added
+
+---------------------------------------------------
+
+2.2:
+
+- Mod now requires patch 1.8.151.0
+- Added No Guards patch for cloaks of Skyrim
+- Added No Guards patch for cloaks of Skyrim No imperial
+- Added No Guards patch for Lorecraft
+- Cloaks and Hoods no longer found in chests/dressers
+- Cloaks and Hoods removed from Vampires
+- Full DLC compatibility
+
+---------------------------------------------------
+
+2.1b:
+
+- Removed all edits to the hunters
+
+---------------------------------------------------
+2.1:
+
+- Mod now requires patch 1.6.89.0
+- Corrected female helm meshes
+- Removed all cloaks from chests
+- All items much rarer
+- Removed Whiterun guard cloaks
+- Hunter vendors reworked
+- Guardless version
+
+---------------------------------------------------
+
+2.0: Major Update
+
+- All wolf skin cloak meshes reworked for better fit
+- Wolf skin hoods added
+- Beast race hoods removed
+- Ears removed from Khajiit versions
+- Prices Reworked
+- Added Enchanted versions
+- Textures edited to remove seams
+- Rare wolf skin cloak added
+- Items renamed for better sorting
+- Hunters now supply more pelts antlers and claws
+- Vendors have higher chance of cloaks and hoods
+- Level Lists remade and sorted better
+- Fixed naked mage bug
+- Heavy and Light armor hoods added
+- Mannequin issues fixed
+- Moved items from Forge to Tanning rack
+- Patch for lore craft
+- Patch for Cloaks of Skyrim
+- Full compatibility with FrostFall
+- Full compatibility with Hypothermia
+
+---------------------------------------------------
+1.1:
+
+- Prices lowered
+- Made cloaks more rare
+- Fixed ability to enchant your cloaks
+- You can now craft Argonian versions out of normal hoods.
+- Made the mod compatible with FrostFall
+- Made the mod compatible with Hypothermia
+- Added optional patch for Cloaks of Skyrim
+
+--------------------------------------------------- 
+1.0:
+
+ - Initial release
+   
+=====================   
+CREDITS & PERMISSIONS   
+=====================   
+
+Nivea: For meshes and textures.
+
+Slavovitsh: For making NMM installer for me to use and edit. Big Thank you.
+
+===============   
+Licensing/Legal   
+===============
+
+Compatibility patches are fine, no permission needed so long as you DO NOT include any of my meshes or textures. Please do NOT post any of my works on Steam, including patches.
+   
+This mod is NOT to be used without my permission, this includes but not limited to:
+
+Uploading to a different site then Nexus
+Recolors
+Uploading to Steam Workshop
+
+You do not have my permission, this mod is still a WIP and I want to hold off until If/When I am ready to upload to Steam.
+If I see this mod on Steam Workshop I will be very unhappy, and that will be the end of any updates to the mod.
+
+==========   
+Contact   
+==========
+
+You can find me on many different forums, all under the same name Nivea I check all my mail often. Your best bet is Nexus though.  
+   
+Official oblivion forum: http://forums.bethsoft.com/user/66980-nivea/  
+Nexus: http://skyrim.nexusmods.com/modules/members/index.php?id=55918
+   
+==========   
+sincerely,   
+Nivea

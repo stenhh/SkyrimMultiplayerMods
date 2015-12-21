@@ -1,0 +1,7 @@
+Use only ONE Cloaks.esp. 
+
+Deactive Cloaks.esp and replace it with just ONE of these two optional files.
+
+Cloaks - No Imperial - This is as the original file, but removes cloaks from Imperial NPCs to make compatible with the armours created by Prometheus. 
+
+Cloaks - Player Only - Cloaks are hand-placed in the world and craftable, but no NPCs will wear them. They are unique to the player only. 

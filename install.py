@@ -2,7 +2,7 @@ import sys
 import os, os.path
 import shutil
 
-SKYRIM_DIRECTORY = "F:/Games/Skyrim"
+SKYRIM_DIRECTORY = "F:\Games\TSEV Skyrim LE"
 
 def copy_tree(src, dst):
     if not os.path.exists(dst):

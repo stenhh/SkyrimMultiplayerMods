@@ -1,0 +1,548 @@
+Open Cities Skyrim
+==================
+
+Open Cities Skyrim is a comprehensive project that aims to bring back at least part of the feel of Morrowind - specifically how most of the cities were a natural part of the world and you could just walk in without loading screens. The added immersion and realism goes a long way, probably a lot more than you might think. Ever wanted to ride your horse into the center of Riften? Well now you can. Need to get some help from the city guards to vanquish a foe? Run toward the gates and the guards will do their duty while you can seek safety within the walls. The town guards make for some very interesting interactions this way. This will also make running dragon battles that much more interesting since the flow of the battle won't be interrupted by the loading screen and all of the city guards can be involved at the same time.
+
+Download Locations
+==================
+
+AFK Mods             - http://afkmods.iguanadons.net/index.php?/files/file/269-open-cities-skyrim/
+Steam Workshop       - http://steamcommunity.com/sharedfiles/filedetails/?id=7320
+Skyrim Nexus         - http://www.nexusmods.com/skyrim/mods/8058
+TES Alliance         - http://tesalliance.org/forums/index.php?/files/file/1263-open-cities-skyrim/
+Dark Creations       - http://www.darkcreations.org/forums/files/file/269-open-cities-skyrim/
+The Assimilation Lab - http://www.theassimilationlab.com/forums/files/file/855-open-cities-skyrim/
+
+Open Cities Skyrim Bugtracker: http://afkmods.iguanadons.net/index.php?/tracdown/categories/2-open-cities-skyrim/
+
+Installation Requirements
+=========================
+
+Official Skyrim patch 1.9.32.0.8 or greater.
+
+SKSE 1.6.9+ and SkyUI 3.2+ are required in order to use the in-game configuration menu. They are NOT required in general for the mod itself.
+
+SKSE 1.7+ is strongly recommended if you are having trouble with ILS/CTD issues. See the troubleshooting section.
+
+Installation - Wrye Bash BAIN
+=============================
+
+Drop the archive into your Skyrim Mods\Bash Installers folder, then install as usual.
+Make sure the mod is active in the Wrye Bash mods tab.
+
+Installation - Steam Workshop
+=============================
+
+Subscribe to the mod via the Workshop page, then use the Skyrim launcher to allow it to download and install.
+Make sure it's active in the Data Files menu.
+
+Installation - Nexus Mod Manager
+================================
+
+Use the "Download with Manager" button on the Open Cities Skyrim page at Skyrim Nexus. The installer should take care of things from there.
+Then simply make sure NMM has the mod activated.
+
+Installation - Manual
+=====================
+
+Drop the Open Cities Skyrim.esp and Open Cities Skyrim.bsa files into your Data folder.
+Activate the mod using whatever management tool suits you.
+
+Post Install Configuration
+==========================
+
+Set the mod's load order using whatever management tool you feel most comfortable with.
+LOOT (http://loot.github.io/) should set the proper load order, and is the recommended method for doing so.
+
+It may also be necessary to rebuild your Bashed Patch if you're using one.
+
+Once the game loads, you need to allow 24+ game hours to pass for AI to fully update in each city.
+
+You can configure three options using the in-game menu if you have SKSE and SkyUI 3.2+ installed.
+
+Option 1: Oblivion Gates. The menu will now allow you to toggle them on or off as desired, on the fly, with no external patches necessary. If you have any such patches, uninstall them. They'll crash the game now.
+
+Option 2: Gate Attendants. The gate attendants who open the city gates when you approach on horseback can be toggled on or off as desired. Yes, some people despised them enough to ask for this. Don't ask me why.
+
+Option 3: Outdoor Lighting System. You can toggle the state of the outdoor lighting system as desired. Nobody asked for this, but I figured what the heck. I was messing with MCM anyway so why not.
+
+These optional configuration elements will not be supported through any other mechanism, so if you're one of those people who irrationally hate SKSE and SkyUI, you'll have to live with using external patches for the gates, and you won't get to turn the other two things off at all.
+
+Uninstalling Open Cities Skyrim
+===============================
+
+Due to the nature of Skyrim mods, especially those adding scripts, it is strongly discouraged to attempt uninstalling a mod from your active game. Any mod that is more than pure mesh or texture replacements has the possibility to leave behind permanent changes to your save that you may not want. This is not something modders can correct for. It is how the game was designed by Bethesda. No support will be provided for anyone who uninstalls this mod from an active game and continues on with that save.
+
+That said, if you're intent on trying anyway:
+
+DO NOT uninstall the mod if you are in the process of pursuing ANY quest which takes place inside one of the cities. Things like Forsworn Conspiracy, the Bards College stuff, many of the Thieves Guild quests, the civil war battles in Whiterun, Solitude, and Windhelm, and probably plenty of others too. You MUST conclude all such quests before attempting to uninstall the mod.
+
+The following procedure needs to be followed to remove the mod:
+
+* Load your game, and move to a location away from any of the cities. Don't use an interior attached to a city for this. Save and exit the game.
+* Deactivate any patches you installed for other mods first. Load your game, then save in a new slot and exit the game.
+* Remove the patch ESPs from your Data folder.
+* Deactivate the ESP. Load the save you just made and save again in another new slot.
+* Uninstall Open Cities Skyrim from the game. Steam Workshop users should unsubscribe first.
+* Be sure the ESP and BSA files are removed from your Data folder.
+* Rebuild your Bashed Patch if you have one, as it is possible it may have pulled records from the mod.
+
+You will need to allow 48+ game hours to pass for AI to recover before returning to the cities.
+
+If NPCs are missing, then the uninstall did not happen cleanly and you will have to revert to an older save or start a new game. There is no other alternative.
+
+You will see warnings in your Papyrus log files about missing scripts. This is unavoidable. They won't cause any lasting harm though as none of them register update events. They just make annoying entries in your log.
+
+Load Order
+==========
+
+Open Cities Skyrim should be loaded as late as possible in order to preserve changes to navmeshes and other exterior city data.
+
+LOOT (http://loot.github.io/) should be used for optimal placement.
+
+Compatibility Patches
+=====================
+
+Official Dawnguard DLC  - Available in the patch archive at the Open Cities Skyrim download sites (except Steam).
+Official Hearthfire DLC - Available in the patch archive at the Open Cities Skyrim download sites (except Steam).
+Skyrim Sewers 4		- Available in the patch archive at the Open Cities Skyrim download sites (except Steam).
+CL Cities - Whiterun	- Available in the patch archive at the Open Cities Skyrim download sites (except Steam).
+Drinking Fountains of Skyrim - Available in the patch archive at the Open Cities Skyrim download sites (except Steam).
+Atlas Map Markers	- http://www.nexusmods.com/skyrim/mods/14976 (scroll down the files tab a bit).
+Inconsequential NPCs    - http://www.nexusmods.com/skyrim/mods/52072
+Interesting NPCs        - http://www.nexusmods.com/skyrim/mods/52205
+Dawn of Skyrim Collection - http://www.nexusmods.com/skyrim/mods/58810
+
+Compatibility
+=============
+
+Mods which strictly replace vanilla textures or the vanilla meshes are 100% compatible.
+
+Expanded Towns and Cities has been confirmed to be 100% compatible since it does not affect the 5 walled cities.
+
+Generally speaking, any mod which adds things to the closed cities will be incompatible.
+
+City mods that add some details to the open worldspace will be partially compatible.
+
+The Last Defeat of the Dragon Cult - The mod hasn't been updated since March 2012. It's navmeshes are partially corrupted and must be repaired.
+
+More Dynamic Shadows & Striping Fix - Numerous dirty edits that cause some interiors to cease functioning.
+
+Mods which edit the following scripts will not be compatible unless patched:
+
+QF_DialogueWhiterunArgueScene_00037CC2
+SF_MS11OpeningCrimeScene_000206AE
+SF_MS11SecondMurderCrimeScene_0002422C
+
+Known Issues
+============
+
+The Civil War battles which take place in Whiterun, Solitude, and Windhelm will be fought within the closed city worldspaces. This had to be done due to complications that were not possible to overcome with the scripting involved in the war and how it relates to several other quests. Expect load door transitions when a city battle is underway.
+
+Troubleshooting Problems
+========================
+
+If you have a problem with an Open Cities mod and wish to report it, I'd appreciate as much information as possible, preferably in the form of a screenshot with console data showing if it's something that can be screened. The FormID of the affected object would help greatly to narrow down any problems that might result. Post this information along with your load order. Reports with less than detailed information may result in delays in getting it fixed, or result in being ignored entirely. It helps everyone to provide details. I am especially interested in verifiable conflicts, as I wish for Open Cities Skyrim to be as conflict-free as is humanly possible given the circumstances. If the situation requires a patch, I can only work something out if I know what to look for.
+
+Help! I'm experiencing Infinite Load Screens (ILS) and/or Crashes to Desktop (CTD)!!!
+-------------------------------------------------------------------------------------
+
+In March of 2013, Bethesda released their final patch for Skyrim. Version 1.9.32.0.8. Prior to this, Open Cities Skyrim had little trouble operating in the available memory the game provided.
+
+It has since been found though that Patch 1.9 changed something about the way Skyrim allocates its initial pools of memory, likely due to trying to get the DLC to work on the PS3 and then not bothering to make sure the PC had, you know, PC specific code for that.
+
+The end result is that when traveling, either on foot or by fast travel, it becomes possible for you to run into problems with ILS/CTD issues. This is especially true in Windhelm and almost guaranteed to happen when trying to get back from Solstheim. It's also likely to happen when fast traveling from one city to another, and CTD may result when trying to enter some interiors after you arrive.
+
+Fortunately the community has devised a solution to this problem in the form of a pre-load memory patch. There are several options for these now, but the one I most strongly recommend is shipping as part of SKSE now beginning with SKSE 1.7. In order to configure SKSE 1.7 to resolve this problem, you simply need to make sure your skse.ini file in Data\SKSE contains at least the following lines:
+
+[Memory]
+DefaultHeapInitialAllocMB=768
+ScrapHeapSizeMB=256
+
+This should resolve the problem on all but the heaviest of load orders. If you still have issues, then you can try either raising the 768 value to 1024, or install ENBoost which will help further reconfigure how RAM is used by the game. There are limits to this, so be careful. Skyrim can only have a maximum of 4GB even on a 64 bit system with boatloads of RAM. Allocate too much to either of the two SKSE settings and you'll be right back where you started with the ILS/CTD problem.
+
+My own load order has 96 active mods, and the SKSE settings alone turned it from totally unstable to fairly rock solid reliable.
+
+The doors inside Warmaidens (in Whiterun) are missing, what have you done with them!
+------------------------------------------------------------------------------------
+
+The More Dynamic Shadows & Striping Fix mod makes a bunch of dirty edits in Warmaidens that will cause the doors to disappear. This mod has several other problem locations as well and it isn't recommended to be used in general until the author fixes the problem.
+
+I am getting unexplained CTDs when using Open Cities with other mods. What gives?
+---------------------------------------------------------------------------------
+
+Open Cities Skyrim requires the latest version of Skyrim, Patch 1.9.32 as of the writing of this document.
+
+Many mods have not been updated since their creation. The most likely causes of issues will be from mods that have navmeshes but have not had them properly redone using CK 1.6.89 or greater. These mods need to be updated by their authors or they will simply not be compatible with the updated navmesh formats and will cause CTDs in any configuration that includes updated mods.
+
+When a mod is reported and confirmed to suffer from this problem, it will be listed in the Incompatible Mods section until such time as it is updated by its author.
+
+Locations of AI Doors
+=====================
+
+The AI doors are entry ways into the closed wordspaces should it become necessary. Not everything that is placed in a city by a mod is worth the time it takes to create a patch. Mods that drop items for a one-time pickup are a good example of this. It's much easier to just go through the door, get what you need, then exit the city as normal.
+
+Riften: East of the main city gate, next to the alley gate.
+Markarth: Enter the city gate, turn immediately to your right. The small rock in the grass patch next to the ivy.
+Whiterun #1: East side of the bridge into the city, right next to the brazier that is closest to the guard shack.
+Whiterun #2: North side of Jorvaskr, on the side of the path up to the Skyforge.
+Solitude #1: In the rock pile between the city gate and the executioner's platform.
+Solitude #2: In the rock pile across from the Bard's College, immediately to the south of the manhole cover.
+Windhelm: As you enter the city gate, turn immediately to the right, then immediately right again. It's in the bushes right next to the wall.
+
+Performance and FPS
+===================
+
+Open Cities Skyrim should not produce a significant change in your frame rates and performance. Due to the liberal use of occlusion planes in the mod, the game will not render anything on the opposite side of the city walls in any given location. So your viewing content will be limited to roughly what you'd see if you were in the closed city worldspaces. The closed city worldspace system was NOT devised by Bethesda to improve frame rates. It was devised to conserve system memory on the XBox 360 and PS3. You're playing on a PC. Or, at least legally speaking you ought to be anyway.
+
+Anyone who insists that this mod is a framerate destroyer is already experiencing other problems with their game. Do keep in mind, Skyrim is not one of those silly shooters that requires 60fps at all times in order to be playable. Dropping from 60 to 55 would go absolutely unnoticed. Even playing with 30-40 frames would go unnoticed to those folks who keep those dumb little indicators running while they play.
+
+If you're seeing a massive frame rate drop, point the finger somewhere else. This mod is absolutely not the cause of your problems. I know this may seem harsh, but this sort of disinformation was rampant with the Oblivion mod and wasn't true then either and I absolutely will not stand for this sort of disinformation being spread now either.
+
+Credits
+=======
+
+Throttlekitty - Help with the Riften city gate collision sizing.
+BassEX - Corrections made to the Markarth dam mesh.
+Hannaise - Oblivion Gates in Skyrim (http://www.nexusmods.com/skyrim/mods/18957)
+jonwd7 - Fixing the collision on 6 Whiterun wall pieces without normal collision height.
+pihwht@Nexus - For having the patience and dedication to dig deep into the civil war and ferret out problems causing it to fail in Solitude.
+Dwip - For numerous improved meshes at the various city gates. No more crappy fake collisions!
+nonoodles - Riften southeast gate mesh plus the animated dock gates.
+Nico coiN - Cut back version of the Whiterun drawbridge mesh.
+
+Licensing and Legal
+===================
+
+Redistribution is strictly forbidden without prior consent. This means do not upload it anywhere unless you have obtained permission from me.
+
+Non-English translation versions may be uploaded without permission on the following conditions:
+
+1. All mod files contained in this archive are retained with their current names.
+2. No alterations are made to the contents of the plugins or master file other than those necessary to translate the English text.
+3. No alterations or additions are made to the meshes and textures other than those necessary to translate English text.
+4. This readme is included, in ENGLISH, exactly as it is written in the version it was downloaded with.
+
+Compatibility Patches may be distributed ONLY under the following conditions:
+
+1. Permission must be obtained from me in advance. There will be no exceptions to this.
+2. The documentation for the patch must mention that I am the creator of this mod.
+3. The documentation for the patch must contain a link back to one of the download sites listed at the top of this readme.
+4. You are solely responsible for any support issues arising from the use of the compatibility patch.
+
+All inquiries regarding this mod must be directed to me. If after 1 year contact cannot be established or you have not received a response, stewardship of this mod will fall to the community at AFK Mods (afkmods.iguanadons.net). I can be contacted via PM at Bethesda Game Studios Forums, TES Alliance, TES Nexus, Great House Fliggerty, Dark Creations, AFK Mods, and The Assimilation Lab under the username Arthmoor. I can also be contacted via my blog at http://www.iguanadons.net using the contact form there. A good faith effort must be made before assuming that contact cannot be established before concluding that I am no longer maintaining this mod.
+
+Mod history archives such as Morrowind Mod History are permitted to keep a copy of this mod within their archives for historical purposes provided all authorship and credit information is retained and the contents of the mod are not altered in any way.
+
+Revision History
+================
+
+Open Cities Skyrim v1.1.3 [2015-07-24]
+--------------------------------------
+
+All cities: Various synchronization fixes for USKP edits to repositioned markers and other objects, up to USKP 2.1.3.
+
+Open Cities Skyrim v1.1.2 [2015-06-20]
+--------------------------------------
+
+All cities: Adjustments to preferred pathing for the navmeshes have been made to correct some minor anomalies in NPC path choices.
+Whiterun: Dragonsreach moat water fix from USKP Bug #18793 applied to correct falling downward when swimming past the seam between pieces. (Bug #18804)
+Riften: The 3 gates behind Riftweald Manor were never properly locked as they should be prior to The Pursuit (TG07).
+Windhelm: Bounds radius data on WHBrunwulf has been adjusted to hopefully prevent Brunwulf's house from disappearing when it loads.
+
+Open Cities Skyrim v1.1.1 [2015-01-11]
+--------------------------------------
+
+Whiterun: The shadowmark at Carlotta's stall needed to be adjusted to match the USKP fix. (Bug #16290)
+Markarth: Collision for the grate over the city gate was missing. A collision box has been added to cover it. (Bug #16313)
+Markarth: A waterfall next to the blacksmith was visually clipping through the stone platform. (Bug #18255)
+Solitude: The Civil War battle failed to swap the doors due to a missing object that was supposed to be holding the script used for this.
+
+Open Cities Skyrim v1.1.0 [2014-10-12]
+--------------------------------------
+
+Windhelm: Triggering the setup for Blood on the Ice (MS11) was competing with scene fragments on the vanilla side that move the NPCs to their start locations. This would cause the NPCs to sometimes end up having to walk back to the open world side. The scenes themselves have now been edited to eliminate this problem.
+Whiterun: The drawbridge mesh extended partway into the city past the normal wall and has been cut back to fit. (Bug #17877)
+
+Open Cities Skyrim v1.0.9 [2014-08-02]
+--------------------------------------
+
+Whiterun: Eorlund Grey-Mane went to the closed city to reforge Wuuthrad due to his package being linked to the furniture object.
+Whiterun: Entering the Underforge prior to your rampage through the city should now put you at the correct marker when the rampage starts. The script was checking the wrong quest stage and not updating properly.
+Markarth: Dryston was not being positioned at the proper marker during Forsworn Conspiracy (MS01).
+
+Open Cities Skyrim v1.0.8 [2014-06-22]
+--------------------------------------
+
+Whiterun: Vilkas' forcegreet package when the player returns for Purity of Revenge (C05) was still checking the WhiterunWorld worldspace.
+Whiterun: Eorlund's package to reforge Wuuthrad was still assigned to the Skyforge in the WhiterunWorld worldspace.
+Whiterun: Enable markers for Kodlak's funeral were not set to use the vanilla markers as toggle parents, so the Pyre would never actually light on fire.
+Whiterun: All NPCs who attend your induction ceremony should now be in place and waiting from the moment you enter the city instead of the possibility of a short delay while they navigate out of the closed worldspace.
+
+Open Cities Skyrim v1.0.7 [2014-06-14]
+--------------------------------------
+
+Markarth: Two more AI packs needed to be edited to make sure the Forsworn would fight and then flee properly after MS02 is ready for them to.
+
+Open Cities Skyrim v1.0.6 [2014-05-23]
+--------------------------------------
+
+Whiterun: Added a smelter and workbench to the Skyforge.
+Whiterun: Fixed several trigger boxes for Companions quests that were not operating 100% correctly.
+Windhelm: Cleaned out several unnecessary navmesh edits. This eliminates the need for the OCS+Dragonborn patch file. If you are using this, please delete it.
+All: Several improved meshes have been provided by Dwip, or modified from vanilla by Dwip in order to fit the city gates better. Several redundant meshes have been removed from the mod as a result.
+All: Navmesh edits to all interior cells (except Breezehome, Proudspire Manor, and the Thalmor Headquarters) have been removed to better facilitate compatibility with mods that alter interior navmeshes.
+
+Open Cities Skyrim v1.0.5 [2014-04-28]
+--------------------------------------
+
+Fixes synced from USKP 2.0.4.
+Markarth: When siding with the Forsworn, Madanach and company will now flee the city properly, fighting until the appropriate time, then running for their base at Druadach Redoubt afterward.
+Riften: Added new meshes to make the canal gates animated so they can be opened and closed. Courtesy of nonoodles.
+Riften: Trim gap and wall seam repaired on the new southeast gate using old USKP mesh to copy parts from.
+Whiterun: The player should no longer be dropped into the wrong worldspace for the werewolf rampage due to an unreliable transfer script.
+
+Open Cities Skyrim v1.0.4 [2014-04-01]
+--------------------------------------
+
+Riften: Added a new mesh for the southeast gate. No more mysteriously boarded up passage to a major road. Courtesy of nonoodles.
+Riften: Reversed a USKP edit that caused the major landscape tile in the city to separate from the boardwalk and sink slightly.
+Riften: The replacement meshes for the outer walls (to put moss on both sides) were in the wrong folder.
+Solitude: Covered up several large gaps in the archway rocks outside the city wall.
+
+Open Cities Skyrim v1.0.3 [2014-02-21]
+--------------------------------------
+
+Adjustments to synchronize fixes with USKP 2.0.1 and USKP 2.0.2.
+Markarth: Fixed a bug during No One Escapes Cidhna Mine (MS02EscapeMadanachEnding) where the guards accompanying Thornar would be in the wrong worldspace because their AI does not move them.
+All: Many buildings were missing their exterior window lighting effects.
+Whiterun: Some stray landscape edits the mod doesn't need have been removed to reduce problems with compatibility outside the city walls.
+
+Open Cities Skyrim v1.0.2 [2013-11-10]
+--------------------------------------
+
+Adjustments to synchronize fixes with USKP 2.0.0.
+
+Open Cities Skyrim v1.0.1 [2013-07-27]
+--------------------------------------
+
+Whiterun: The city gate now has a properly combined gatehouse mesh with real collision instead of crappy collision planes and a bad landscape hack.
+Riften: The Argonian north gate attendant now has a voiced dialogue line.
+Markarth: The large dam that makes up the southern portion of the east wall now has real collision and the duplicated mesh parts have been trimmed, along with the fake collision planes removed.
+
+Open Cities Skyrim v1.0 [2013-06-09]
+------------------------------------
+
+All: The gate attendants did not have persist locations set, so their AI schedules were not running properly.
+Windhelm: Due to complications brought on by the civil war, the Battle of Windhelm will now take place in the closed city instead of in the open. (Bug #12164)
+Whiterun: Due to continuing minor complications, the Battle of Whiterun will now take place in the closed city for both Stormcloaks and Imperials.
+Solitude: Due to continuing complications in the civil war, the Battle of Solitude will now take place in the closed city instead of in the open.
+Windhelm: Brunwulf Free-Winter's house occasionally disappeared upon entering the city. This has now been corrected by flagging the mesh as IsFullLOD which will force it to load regardless. (Bug #3)
+Whiterun: Two of Irileth's guards she dispatches to Riverwood were using the wrong marker targets. (Bug #1)
+Riften: The city gate mesh will not merge and become one with the northern gate tunnel. It can never be fully corrected though due to the way that spot is set up. (Bug #12794)
+
+Open Cities Skyrim v0.9.9a [2013-03-11]
+---------------------------------------
+
+Fixed improper initialization of the MCM menu.
+
+Open Cities Skyrim v0.9.9 [2013-02-27]
+--------------------------------------
+
+Solitude: The bridge scene during To Kill an Empire (DB09) would freeze the player's controls out and never re-enable them after Maro's monologue.
+Solitude: Maro's monologue scene in To Kill an Empire (DB09) had him delivering it from behind the 3 guards due to the lack of a navmesh at the scene marker he's supposed to use.
+Solitude: Vittoria's wedding scene during Bound Until Death (DB05) was not functioning correctly due to the lack of a navmesh on the balcony where she gives the speech.
+Solitude: Some of the audience members for Vittoria's wedding were not in the correct worldspace due to the AI markers not having been moved properly.
+Solitude: A smelter has been added in front of the Fletcher's shop. (Issue #12162)
+Whiterun: During the battle to defend the city on the Imperial side, the city gate needs to be unlocked. The trigger governing the lock state during the battle did not take Imperial players into account. (Bug #11875)
+Markarth: Margaret and Weylin were not always at the proper scene markers for Forsworn Conspiracy (MS01) due to one of the markers being held as a script property. (Bug #11905)
+Riften: The landscape edits under the south gate somehow got lost, leaving an ugly gap below the road.
+
+Open Cities Skyrim v0.9.8 [2013-01-14]
+--------------------------------------
+
+General: Syncronized fixes from updates to the USKP.
+General: Implemented a SkyUI MCM menu to provide a means to enable or disable the following: Oblivion Gates, City Gate Attendants, Outdoor Lighting System. Note that no other optional toggle system will be supported. SkyUI 3.1 or above is required for this to work, and SKSE is required for SkyUI. SKSE will not be a strict requirement for OCS though. Without SKSE, the MCM menu simply won't function.
+General: Removed several navmeshes that the mod does not need to edit, which should help improve compatibility with mods that edit things near the cities.
+Solitude: The decorations for the wedding scene during the Dark Brotherhood are never cleared once the quest is done. This fix will rely on the USKP to trigger it at the appropriate time.
+Riften: Added another AI door for the children at the orphanage to prevent them from sometimes getting stuck outdoors in the closed worldspace.
+Markarth: Fixed the trigger that modifies Dryston's ambush and brawl scene during Forsworn Conspiracy (MS01).
+
+Open Cities Skyrim v0.9.7 [2012-12-05]
+--------------------------------------
+
+Solitude: One of the civil war fires was not hooked up to the enable parent properly.
+General: The script which fixes broken positioning on the original vanilla gates has been modified so that it will only attempt to execute once instead of on every reload of the area.
+
+Open Cities Skyrim v0.9.6 [2012-11-19]
+--------------------------------------
+
+All: Old script assignments attached to the player house doors have been removed so they won't block access to the real ones.
+All: Hana upgraded her Oblivion gate meshes to use real collision. The fake collision cubes have therefore been removed from the game. Improved textures have also been provided.
+All, except Windhelm: Outdoor lighting in the cities will turn on and off for day/night changes. Windhelm will not be covered since the outdoor lighting doubles as sources of warmth.
+Whiterun: A barricade outside the Drunken Huntsman was not tethered properly to its enable parent.
+
+Open Cities Skyrim v0.9.5 [2012-10-16]
+--------------------------------------
+
+Generated SEQ file necessary to handle start-enabled quests.
+
+All: The gatesmen for the cities have all been transferred to interior start locations so the civil war quests that send everyone indoors will take them too.
+Solitude: The cell SolitudeMountainside was not properly listed as being in SolitudeLocation and was disrupting civil war data for the city.
+Solitude, Whiterun, Windhelm: Location reference type markers have been stripped from the closed city markers to prevent them from stealing aliases from their open city counterparts during the civil war.
+Solitude: The birds that fly overhead will now be disabled during the civil war battle.
+Whiterun: The Stormcloak assault on the city should now be working properly.
+
+Open Cities Skyrim v0.9.4 [2012-10-06]
+--------------------------------------
+
+Mod has been cleaned with TES5Edit. Yay! No more dirty edits or deleted records in the way!
+Whiterun: Fixed navmesh edits in Breezehome to avoid a CTD conflict caused by the Hearthfire DLC.
+
+Open Cities Skyrim v0.9.3 [2012-09-29]
+--------------------------------------
+
+All: Fixed the quest objective pointers for the house purchases.
+All: Town music has been fixed in the region definitions and should play properly when in the cities now.
+Windhelm: Fixed some markers and AI packs so Blood on the Ice will continue to work properly.
+Solitude: The crates and furniture on the porch of Proudspire Manor were not attached to the parent object for the house quest.
+Riften: The wrong duplicate door was removed in the previous update.
+Whiterun: Backed out changes to the Companions werewolf rampage (C03Rampage) and reworked the access point to it in order to remove a conflict with Dawnguard.
+Riften, Whiterun, Windhelm: Added woodcutters' axes at each chopping block where wood can be cut.
+
+Open Cities Skyrim v0.9.2 [2012-09-08]
+--------------------------------------
+
+Whiterun: The trigger box that is intended to unlock the gate wasn't 100% effective. Added a check for the guard dialogue stage to force the gate to unlock.
+Whiterun: Some of the patrol guards needed to have their linked references updated or they'd stay stuck in the closed city.
+Whiterun: A few more marker problems sending people to the closed worldspace have been corrected.
+Riften: A duplicate door at Elgrim's Elixirs has been removed.
+Riften: Brynjolf's Falmer Blood Elixir bottles were not attached to the enable marker that cleans them up once the initial Thieves Guild quest is done.
+
+Open Cities Skyrim v0.9.1 [2012-08-17]
+--------------------------------------
+
+The compatibility support system used by the Open Cities mods for Oblivion has been added to allow for authors who wish to support compatibility with Open Cities to do so without requiring a patch file between mods. A new document has been included which explains the system and how to use it.
+
+Solitude: During the tower escape for the Dark Brotherhood, Commander Maro will no longer be missing from the scene due to having been moved to the closed worldspace.
+Solitude: The quest marker for the Festival of Fire will now point to the correct worldspace.
+Whiterun: The script to deal with unlocking the city gate at appropriate times was accidentally left out.
+Whiterun: The Dark Elf gatesman had somehow been given sound data for giants, resulting in heavy breathing sounds near him.
+Whiterun: A gap in the stairway leading up to Dragonsreach has been corrected.
+Windhelm: The map markers for the city should no longer be shifted slightly out of position on the map.
+Windhelm: The door to Hjerim lost its key assignment and has been corrected.
+
+Open Cities Skyrim v0.9 [2012-08-06]
+------------------------------------
+
+(Yes, this was a somewhat arbitrary version number jump)
+
+With this update, be sure and pay a visit to the gates in Windhelm, Whiterun, and Markarth so that the updates can be registered.
+
+Recompiled all scripts from the mod to be sure they're in compliance with format changes introduced in Skyrim 1.6.89.
+Whiterun: When asked to train outside with Vilkas, the participants all ended up going to the closed worldspace instead.
+Whiterun: The argument at the gate for "In My Time of Need" will no longer be a one sided show with just the two Redguards and no city guard.
+Whiterun: The city gate has been tweaked so as to allow the civil war door flags to operate properly. It will also now lock and unlock itself at appropriate quest stages.
+Whiterun: The gatesman was not set in the right crime faction which allowed him to be freely slaughtered without the guards assisting him.
+Markarth: Tyranus and Yngvar will now be found waiting in the proper locations for their scene outside the abandoned house.
+Markarth: The scene with Endon, Karah, and Adara will now play out in the proper location in the open worldspace.
+Markarth: The city gate should no longer displace itself when the mod is uninstalled.
+Windhelm: The map marker should no longer be slightly offset from its counterpart in the closed worldspace.
+Windhelm: The two city gates should no longer be rotated 90 degrees off center when the mod is uninstalled.
+Riften: The fireball floating in the trees northeast of the city has been removed.
+
+Open Cities Skyrim v0.8.1 [2012-07-12]
+--------------------------------------
+
+Windhelm: Some markers for Blood on the Ice needed to be fixed.
+Whiterun: A necessary script for part of the Companions quest was left out and has now been included.
+
+Open Cities Skyrim v0.8 [2012-07-08]
+------------------------------------
+
+All: Doors to the player houses will now properly complete the house purchasing objectives if a house hasn't been visited before installing the mod.
+Solitude: Stepping on to the execution platform after Rogviir is dead will no longer make the guards hostile.
+Whiterun: The city gate should no longer bar access during the Battle for Whiterun.
+Riften: A missing piece of wall was added in the area below the Mausoleum.
+
+New Material: Windhelm is now an open city.
+
+Open Cities Skyrim v0.6 [2012-07-03]
+------------------------------------
+
+Whiterun: The Oblivion gate behind the Talos statue has been switched to the less obtrusive grey rock variety.
+Whiterun: Cleaned up several large floating rocks, and other rocks sticking through walls.
+Whiterun: Cleaned up some civil war debris objects that had been missed.
+Whiterun: The outer walls have been replaced with versions that don't have ridiculously tall collision, which will enable several new entry and exit points in the city.
+Whiterun: The city gate will now animate more smoothly and play its correct sound.
+Solitude: Added some crates to a section of battlement near the temple so the player can get out if they jump down to it.
+Riften: The Oblivion gate at the castle barracks was removed. A broken one in the harbor replaces it.
+Riften: The two city gates will now animate more smoothly and play their proper sound.
+
+Open Cities Skyrim v0.5 [2012-06-25]
+------------------------------------
+
+Scrapped everything and rebuilt the entire mod due to corruption introduced in previous versions by TESVSnip.
+
+All: Gatesmen have been added to each city who will open the gate for you if you approach on horseback.
+All: Remnant Oblivion gates are now present in each city as leftovers from the Oblivion Crisis.
+Riften: Replacer meshes for the walls which will display the moss on the inside portions that wasn't present before.
+Whiterun: Updated the main gatehouse mesh so that the exterior side has all of the parts it needs.
+Whiterun: Shuffling of AI packs and NPC positioning has been done to smooth out some problems with the Companions quests.
+Markarth: Improvements have been made to the meshes on the inside of the city walls.
+
+New Material: Solitude is now an open city.
+
+Open Cities Skyrim v0.35 [2012-04-16]
+-------------------------------------
+
+Whiterun: Fixed an error in the script that turns off the LOD lights that was allowing more than just actors to trigger it, generating immense lag.
+
+Open Cities Skyrim v0.34 [2012-04-09]
+-------------------------------------
+
+Reversed the alterations to the vanilla city map marker data due to the fact that an engine bug causes the change to become permanent. UGH.
+Riften: Removed some previously unnoticed duplicate walls and buildings. Should help with performance now that those are gone.
+
+Open Cities Skyrim v0.33 [2012-03-29]
+-------------------------------------
+
+All: Navmeshes in every edited cell have been refinalized.
+Whiterun: Several piles of civil war rubble were attached to the wrong enable parents.
+Riften: Added a smelter to the blacksmith's area and moved the wood piles that were there around the corner.
+
+Open Cities Skyrim v0.32 [2012-03-02]
+-------------------------------------
+
+Whiterun: Fixed remaining issues with Companions quests that take place outdoors in the city, especially at the Skyforge.
+Whiterun, Riften, Markarth: Jury-rigged the map markers so that they will drop you into the open city space regardless of when the mod was installed.
+Whiterun: Heimskr's AI routine and rant scene needed the markers changed so he wouldn't run off to the closed worldspace like an idiot.
+
+Open Cities Skyrim v0.31 [2012-02-27]
+-------------------------------------
+
+Whiterun: Fixed the navmesh connection from the closed city so the NPCs could actually get out and go about their normal routines.
+Whiterun: Fixed a portion of the Companions quest that was broken due to the markers refusing to move to the open worldspace.
+
+Reattached Update.esm as a master to prevent wiping out any vanilla fixes I might run into now that some AI packs and quests are in need of tweaking.
+
+Open Cities Skyrim v0.3 [2012-02-26]
+------------------------------------
+
+Riften: Fixed a bug where some NPCs would continue to hang around the wrong worldspace due to an AI marker that was missed.
+Riften, Markarth: Adjusted some of the occlusion planes to squeeze out a bit of extra performance.
+Riften: Patchwork fix to keep one of the bridge pieces from vanishing until Bethesda can fix the static LOD bug.
+
+New Material: Whiterun has been converted to an open city.
+
+Open Cities Skyrim v0.21 [2012-02-08]
+-------------------------------------
+
+Riften: Fixed a bug that caused the quest "A Chance Arrangement" to fail intermitently due to Madesi's strongbox not getting the ring added properly.
+Markarth: A corrected mesh for the dam on the south side of the city has been provided by BassEX.
+Markarth: A collision plane has been added to prevent people from walking through the altered dam mesh, until such time as the collision can be repaired properly.
+
+Open Cities Skyrim v0.2 [2012-02-07]
+------------------------------------
+
+Initial public release including Riften and Markarth.

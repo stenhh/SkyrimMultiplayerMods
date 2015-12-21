@@ -1,0 +1,50 @@
+Detecting Open Cities Skyrim in Your Mod
+========================================
+
+If you have a mod which does things in the cities, you may desire to support users who install Open Cities Skyrim. With the amount of mods out there that alter cities, it is not reasonable to expect people to create patch files for them all. There simply won't be enough slots in the load order for it. So this article provides two ways to get around the need for a patch file at all. They are both tried and true methods from Oblivon modding that still work for Skyrim.
+
+If your mod is simple enough that the objects are always on and you want compatibility with OCS, the easiest thing would simply be to duplicate your additions in the open world spaces. This works best for mods that are merely adding trees, rocks, or other scenery objects to the area.
+
+At the opposite end, if you need to make navmesh corrections to support compatibility, then these methods will not work and a patch file will be required.
+
+For the rest, the following methods should work well:
+
+Using the "Rock Method"
+-----------------------
+
+A method for detection of one mod by another was developed by Vorians and Ismelda. Instead of using a script, which needs constant monitoring, it is possible to take advantage of the parent/child relationship that objects can have and cause one mod to enable features in another as long as the proper load order is maintained. This method became known as the "rock method" because they originally used a set of rocks to make it all work.
+
+The idea is fairly simple. The parent mod sets aside a group of items in a little used testing cell. The more isolated the items are, the better. Testing cells make perfect hosts since they don't usually get modified. These items should be disabled, and *MUST* be items found in Skyrim.esm or this method will not work.
+
+The following trigger item is used by Open Cities Skyrim to enable this support:
+
+Cell WarehouseFurniture. As first loaded, the object in the lower left corner. It's just some random idle marker the devs were using for testing.
+
+The object's Form ID: 000CE20F
+
+Anything you have in your mod which should be toggled needs to use the listed item as their enable parent in the CK. Set the marker to be initially disabled.
+
+Objects in your mod that should be active if OCS is not present should have the box "Set Enable State to Opposite of Parent" checked. Do not check the "Initially Disabled" box.
+
+Objects in your mod that should be disabled if OCS is present should check the "Initially Disabled" box.
+
+It does not matter if the child item is persistent or not, so you can use this to setup things like alternate doors and markers as well as normal temporary items. In fact, alternate sets of doors to enter and leave a new location are what this method is best suited for.
+
+On my side in the OCS file, the trigger item has been assigned an editor ID so that it will override the normal item. Items set to be enabled when this is enabled will be on, items set to be disabled when this is enabled will be off.
+
+Using this method for alternative exits, you can create one set of doors that lead to the vanilla worldspaces, and another set of doors in the same locations that lead to the Open Cities worldspaces. 
+
+In order for this method to work, the mod wishing to incorporate support MUST load before Open Cities Skyrim.esp in the load order. If this is not possible then an alternate method must be found, or a patch file will be necessary.
+
+Cell Ownership Method
+---------------------
+
+For mods that require AI packs in cities or quest targets to point to locations in a city exterior, a second hack is needed in order to facilitate this. It is relatively straightforward and only involves a minimal amount of extra work in order to set it up. The method involves hijacking the dummy cells for each city and giving them a specific ownership. This ownership can then be checked for using an IsCellOwner condition in AI or quest targeting.
+
+You *DO NOT* change the cell ownership in your mod, all you do with this is add extra AI/Quest targets that look for the ownership changes and act accordingly. You will need to place your own markers for the added packs and targets to use though.
+
+NPCs must be used as owners because the CK does not allow factions in the AI pack "IsCellOwner" condition. The ownership check is done using AADeleteWhenDoneTestJeremyBig, the first NPC on the list of Actors. His Form ID is 0010D140.
+
+This NPC has been set as the owner of the WarehouseFurniture cell.
+
+This method is immune to load order positioning and will only fail if a mod loads after Open Cities Skyrim and modifies the cells in some way, which would cancel out the ownership.
