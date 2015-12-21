@@ -17,8 +17,10 @@ def copy_tree(src, dst):
                 shutil.copy2(s, d)
 
 def main():
-    for node in os.listdir(os.getcwd()):
-        node = os.path.join(os.getcwd(), node)
+    mod_dir = os.path.join(os.getcwd(), "mods")
+    
+    for node in os.listdir(mod_dir):
+        node = os.path.join(mod_dir, node)
         if (os.path.isdir(node)):
             copy_tree(node, SKYRIM_DIRECTORY)
 
