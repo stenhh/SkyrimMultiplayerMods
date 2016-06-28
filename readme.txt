@@ -1,6 +1,4 @@
-Note: Multiplayer Skyrim wasn't working when this was created and I have doubts that it will ever be working. The SkyrimOnline 
-  mod was my last hope, but the developers won't actually make their repository public... If it was public, then I'd be 
-  submitting pull requests, but you know, whatever. This repository at least works for single player Skyrim though...
+Note: Multiplayer Skyrim wasn't working when this was created and I have doubts that it will ever be working. The SkyrimOnline mod was my last hope, but the developers won't actually make their repository public... If it was public, then I'd be submitting pull requests, but you know, whatever. This repository at least works for single player Skyrim though...
 
 Prerequisites:
 
